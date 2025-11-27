@@ -54,12 +54,14 @@ all: ${NAME} ${BONUS}
 bonus: ${BONUS} 
 
 clean:
-	${RM} ${OBJ_1} ${OBJ_2} ${OBJ_3} ${BONUS_OBJ} ${NAME} ${BONUS}
+	${RM} ${OBJ_1} ${OBJ_2} ${OBJ_3} ${BONUS_OBJ}
 	@cd $(LIBFTDIR) && $(MAKE) clean
+	@cd $(GET_NEXT_LINE) && $(MAKE) clean
 
 fclean: clean
-	${RM} ${NAME}
+	${RM} ${NAME} ${BONUS}
 	@cd $(LIBFTDIR) && $(MAKE) fclean
+	@cd $(GET_NEXT_LINE) && $(MAKE) fclean
 
 re: clean all
 

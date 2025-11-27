@@ -24,6 +24,8 @@
 # include "libft/includes/libft.h"
 # include "printf/ft_printf.h"
 
+char	*get_next_line(int fd);
+
 # define MAXINT 2147483647
 # define MININT -2147483647
 

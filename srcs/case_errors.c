@@ -94,6 +94,6 @@ void	ft_free_rank(int **rank, t_stack_node **stack)
 void	ft_free_errors(t_stack_node **a)
 {
 	ft_free_stack(a);
-	ft_printf("Error\n");
+	write(2, "Error\n", 6);
 	exit(1);
 }

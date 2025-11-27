@@ -19,7 +19,7 @@ int	main(int argc, char **argv)
 	int				**rank;
 
 	if (argc == 1 || (argc == 1 && argv[1][0] == '\0'))
-		return (1);
+		return (0);
 	a = NULL;
 	b = NULL;
 	ft_init_stack_a(&a, argc, argv);
